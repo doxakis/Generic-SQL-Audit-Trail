@@ -26,4 +26,4 @@ You can exclude tables in the script.
 - Add triggers for almost all tables (this can be customized).
 
 ## Copyright and license
-Code released under the MIT licence.
+Code released under the MIT license.
