@@ -16,5 +16,5 @@ For more detail, please read this post: https://doxakis.com/2015/12/17/SQL-Scrip
 - Add "Audit" table if not found on the database
 - Add triggers for almost all tables (this can be customized).
 
-# Copyright abd licence
+# Copyright and license
 Code released under the MIT licence.
