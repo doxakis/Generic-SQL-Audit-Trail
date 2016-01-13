@@ -26,7 +26,7 @@ Script Name:
 Author:
     Philip Doxakis
 Customize:
-	You can exclude table in the script.
+	You can exclude tables in the script.
 	Follow comments in the script: "Specify table to exclude here:"
 Description:
 	Install a complete audit trail on selected database.
