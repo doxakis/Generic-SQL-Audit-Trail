@@ -12,13 +12,13 @@ For more detail, please read this post: https://doxakis.com/2015/12/17/SQL-Scrip
 - Check the printed messages and make sure the query has been executed successfully.
 
 ## Customization:
-	You can exclude tables in the script.
-	- Follow comments in the script: "Specify table to exclude here:"
+You can exclude tables in the script.
+- Follow comments in the script: "Specify table to exclude here:"
 
 ## Limitations:
-	- Audit table is "Audit"
-	- Audit trigger start with "tr_audit_"
-	- Do not support datatype: image (Based on https://msdn.microsoft.com/en-us/library/ms187928.aspx)
+- Audit table is "Audit"
+- Audit trigger start with "tr_audit_"
+- Do not support datatype: image (Based on https://msdn.microsoft.com/en-us/library/ms187928.aspx)
 
 ## Steps
 - Remove all triggers starting with "tr_audit_"
