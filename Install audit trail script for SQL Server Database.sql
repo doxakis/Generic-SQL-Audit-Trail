@@ -221,7 +221,7 @@ SET @sqlCreateTriggerTemplate = 'CREATE TRIGGER tr_audit_$$TableName$$
 						   + '','''''' + @UpdateDate + ''''''''
 						   + '' from #ins i full outer join #del d''
 						   + @PKCols
-						   + '' where i.'' + @fieldname + '' <> d.'' + @fieldname 
+						   + '' where convert(varchar(MAX),i.'' + @fieldname + '') <> convert(varchar(MAX),d.'' + @fieldname + '')''
 						   + '' or (i.'' + @fieldname + '' is null and  d.''
 													+ @fieldname
 													+ '' is not null)'' 
@@ -395,7 +395,7 @@ AS
 							   + '','''''' + @UpdateDate + ''''''''
 							   + '' from #ins i full outer join #del d''
 							   + @PKCols
-							   + '' where i.'' + @fieldname + '' <> d.'' + @fieldname 
+							   + '' where convert(varchar(MAX),i.'' + @fieldname + '') <> convert(varchar(MAX),d.'' + @fieldname + '')''
 							   + '' or (i.'' + @fieldname + '' is null and  d.''
 														+ @fieldname
 														+ '' is not null)'' 
